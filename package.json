@@ -4,14 +4,12 @@
   "scripts": {
     "start": "dumi dev",
     "build": "dumi build",
-    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "changelog": "conventional-changelog -p angular -i ./CHANGELOG.md -s -r 0"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
       "prettier --write"
@@ -22,8 +20,12 @@
   },
   "devDependencies": {
     "dumi": "^1.0.9",
-    "lint-staged": "^10.0.7",
-    "prettier": "^1.19.1",
-    "yorkie": "^2.0.0"
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "conventional-changelog-cli": "^2.1.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.2",
+    "prettier": "^2.1.2"
+
   }
 }
