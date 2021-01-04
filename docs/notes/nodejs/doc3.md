@@ -10,3 +10,9 @@
 | 更新           | `npm update -save`   | `yarn upgrade`        |
 | 全局更新       | `npm update -global` | `yarn global upgrade` |
 | 清除缓存       | `npm cache clean`    | `yarn cache clean`    |
+
+需要手动选择升级的依赖包，按空格键选择，a 键切换所有，i 键反选选择
+
+```bash
+yarn upgrade-interactive --latest
+```

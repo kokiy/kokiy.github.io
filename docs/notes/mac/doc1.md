@@ -14,26 +14,12 @@ Laptop is a script to set up your Mac OS X development environment.
 
 ## Install
 
----
+1. [切换国内镜像](https://github.com/cunkai/homebrewcn)
 
-`zsh <(curl -sL https://raw.githubusercontent.com/kokiy/kokiy.github.io/master/bootstrap.sh)`
+2. `zsh <(curl -sL https://kokiy.github.io/bootstrap.sh)`
 
 ## config zsh theme
 
 `cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc`
 
 `ZSH_THEME="robbyrussell"`
-
-## brew 换镜像
-
-```bash
-cd "$(brew --repo)"
-
-git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
-
-cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
-
-git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
-
-brew update
-```
