@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "dumi-app",
+  "license": "MIT",
   "scripts": {
     "start": "dumi dev",
     "build": "dumi build",
