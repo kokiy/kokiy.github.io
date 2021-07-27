@@ -199,3 +199,12 @@ function compose(...funcs) {
   return funcs.reduce((a, b) => (...args) => a(b(...args)));
 }
 ```
+## componsePromise
+```js
+function composePromsie(...funcs) {
+  return (arg) =>
+    funcs.reduce((sequence, currentFunc) =>
+          sequence.then(result => currentFunc(result))
+          , Promise.resolve(arg))
+    }
+```
