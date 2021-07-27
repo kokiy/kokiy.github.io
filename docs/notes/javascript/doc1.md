@@ -201,7 +201,7 @@ function compose(...funcs) {
 ```
 ## componsePromise
 ```js
-function composePromsie(...funcs) {
+function composePromise(...funcs) {
   return (arg) =>
     funcs.reduceRight((sequence, currentFunc) =>
           sequence.then(result => currentFunc(result))
